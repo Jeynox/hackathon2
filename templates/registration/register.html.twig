@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - Inscription{% endblock %}
+
+{% block body %}
+    <h1 class='h1-register'>Inscription</h1>
+    <div class='ligne-titre'></div>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+    <div class='register-container'>
+        <div class='input-register'>
+            {{ form_row(registrationForm.genre) }}
+        </div>
+        <div class='name-register'>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.firstname) }}
+            </div>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.lastname) }}
+            </div>
+        </div>
+        <div class='email-password-register'>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.email) }}
+            </div>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.plainPassword) }}
+            </div>
+        </div>
+        <div class='input-register input-text adresse-input'>
+            {{ form_row(registrationForm.adress) }}
+        </div>
+        <div class='adress-register'>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.city) }}
+            </div>
+            <div class='input-register input-text'>
+                {{ form_row(registrationForm.postal_code) }}
+            </div>
+        </div>
+        <div class='input-register input-date'>
+            {{ form_row(registrationForm.birthdate) }}
+        </div>
+        <div class='input-register'>
+            {{ form_row(registrationForm.agreeTerms) }}
+        </div>
+
+        <button type="submit" class="btn">J'accepte</button>
+    </div>
+    {{ form_end(registrationForm) }}
+{% endblock %}

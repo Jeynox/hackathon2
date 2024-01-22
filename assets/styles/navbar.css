@@ -1,0 +1,61 @@
+nav {
+    background-color: black;
+    padding: 0.8rem;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div h3 {
+    color: white;
+    font-family: var(--titleF);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav div h2 {
+    color: white;
+    font-family: var(--titleF);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.height-drawer {
+    height: fit-content !important;
+    background-color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.height-drawer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.height-drawer li {
+    margin-bottom: 1rem;
+}
+
+.height-drawer li a {
+    font-family: var(--titleF);
+    text-decoration: none;
+    color: white;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    font-family: var(--titleF);
+    font-size: 0.7rem;
+}
